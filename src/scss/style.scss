@@ -1,0 +1,51 @@
+@import "~bootstrap/scss/bootstrap";
+@import "parts/vars";
+
+//div, ul, li, a, span, img, section, h6 {
+//  border: 1px solid red;
+//}
+
+html, body {
+    height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 41px 1fr auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+.hide {
+  display: none;
+}
+
+.header {
+  grid-area: header;
+}
+
+.wrapper {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
